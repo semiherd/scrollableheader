@@ -24,7 +24,7 @@ export default function Category({data})  {
         }
     }
 
-    const renderItem = ({ item }) => <CategoryCard key={item.id} data={item} />;
+    const renderItem = ({ item }) => <CategoryCard data={item} />;
     const keyExtractor = (_,index) => index.toString(); 
     
     return (
