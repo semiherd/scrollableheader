@@ -5,7 +5,7 @@ import Home from './src/component/Home'
 function App() {
     
   return (
-      <View style={{justifyContent:'center',backgroundColor:'#F7E7E9'}}>                                 
+      <View style={{justifyContent:'center'}}>                                 
         <Home />
       </View>
   );
