@@ -6,11 +6,6 @@ import CategoryCard from './CategoryCard';
 export default function Category({data})  {
     const[category,setCategory]=useState([]);
 
-    const [icon,setIcon]= useState({
-        size: 30,
-        color: 'steelblue'
-    });
-
     useEffect(() => { 
         arrangeCategory(data)     
     },[data])
@@ -29,7 +24,7 @@ export default function Category({data})  {
         }
     }
 
-    const renderItem = ({ item }) => <CategoryCard key={item.id} icon={icon} data={item} />;
+    const renderItem = ({ item }) => <CategoryCard key={item.id} data={item} />;
     const keyExtractor = (_,index) => index.toString(); 
     
     return (
