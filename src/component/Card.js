@@ -12,13 +12,12 @@ export default function AdCard({data})  {
         <View style={[styles().row,styles().container]} >
             <View style={styles().textContainer}>
                 {title && <Text style={styles().title}>{capitalizeFirstCh(title)}</Text>}
-                {priceIcon && priceObj?.value && <Text style={styles().price}>{priceIcon}{price}</Text>}
             </View> 
             
             <View style={styles().imageContainer}>
                 {uri?  (    
                     <Image resizeMode= "contain" style={styles(0.45,0.15).image} source={uri} />     
-                    ):
+                ):
                     <Image resizeMode= "contain" style={styles(0.45,0.15).image} source={NoImage} />     
                 }
             </View>   
